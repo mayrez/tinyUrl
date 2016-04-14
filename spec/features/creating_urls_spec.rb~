@@ -1,4 +1,4 @@
-equire 'rails_helper'
+require 'rails_helper'
 
 feature 'Creating tiny urls'  do
   before do
