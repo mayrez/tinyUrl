@@ -58,3 +58,4 @@ group :production do
   gem 'rails_12factor'
 end
 gem 'puma'
+gem 'bootstrap-sass', '~> 3.0'

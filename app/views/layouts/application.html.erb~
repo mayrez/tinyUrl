@@ -18,6 +18,7 @@
     </aside>
   <% end %>
 
+
 <%= yield %>
 
 </body>
