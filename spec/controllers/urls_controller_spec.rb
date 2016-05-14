@@ -33,6 +33,8 @@ RSpec.describe UrlsController, type: :controller do
 	  link: Link.new(identifier: "shortenUrl", url: nil)}
   }
 
+
+
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # UrlsController. Be sure to keep this updated too.
@@ -89,7 +91,6 @@ RSpec.describe UrlsController, type: :controller do
       end
     end
 
-   
   end
 
   describe "PUT #update" do
@@ -98,6 +99,7 @@ RSpec.describe UrlsController, type: :controller do
         { 
 		  original: 'http://www.elpais.es',
 	      link: 'customUrl'}
+
       }
 
       it "updates the requested url" do
@@ -128,6 +130,7 @@ RSpec.describe UrlsController, type: :controller do
       end
 
       it "re-renders the 'edit' template" do
+
         url = Url.create! invalid_attributes
         put :update, {:id => url.to_param, :url => invalid_attributes}, valid_session
         get :show, {:id => url.to_param}, valid_session

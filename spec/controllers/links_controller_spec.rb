@@ -116,6 +116,7 @@ RSpec.describe LinksController, type: :controller do
         expect(response).to redirect_to(link)
       end
     end
+
   end
 
   describe "DELETE #destroy" do
