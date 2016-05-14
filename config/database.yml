@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: tiny_url_production
-  username: toy_url
+  username: tiny_url
   password: <%= ENV['TOY_URL_DATABASE_PASSWORD'] %>
